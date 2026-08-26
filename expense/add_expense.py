@@ -4,6 +4,9 @@ class AddExpense:
     def adding_expense(self):
         title = input("Enter Expense Title: ")
         amount = float(input("Enter Expense Amount: "))
+        if amount<=0:
+            print("Enter valid amount")
+            return
         category = input("Enter Expense Category: ")
 
         expense = {
