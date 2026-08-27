@@ -1,5 +1,5 @@
 import sys
-from expense.add_expense import AddExpense
+from expense.expense_manager import Input_Expense
 while True:
     print("=========================================================================================================")
     print("                                        Expense Tracker                                                     ")
@@ -12,8 +12,8 @@ while True:
     print("6. Exit")
     option = int(input("Choose your option: "))
     if option == 1:
-        expense = AddExpense()
-        expense.adding_expense()
+        expense = Input_Expense()
+        expense.input_expense()
         print("Expense Added")
     elif option == 2:
         print("2. View Expenses")
